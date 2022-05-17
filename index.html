@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Font, css and java script, icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
+    <!-- Google Font, css and java script, icon -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCalculator</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="logo">
+            <h1>
+                Age<br />Caluclator
+            </h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="#">Home</a></li>
+                <li><a class="navbar-link" href="#">Profile</a></li>
+                <li><a class="navbar-link" href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div class="heading">
+            <p class="headline">How much time you are present on earth</p>
+            <p>enter your janmatithi</p>
+        </div>
+        <div class="mainContent">
+            <div class="main">
+
+                <input type="text" id="day" oninput="cal()" placeholder="DD"> <br />
+                <input type="text" id="month" oninput="cal()" placeholder="MM"><br />
+                <input type="text" id="year" oninput="cal()" placeholder="YYYY"><br />
+                <div id="output">
+                    <span id="year-out"></span> Year
+                    <span id="month-out"></span> Month
+                    <span id="day-0ut"></span> Days
+                </div>
+                <div id="btn">
+                    <input type="button" value="calculat" id="btn1" onclick="cal()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="share">
+            <a href="whatsapp://send?text=calculat your age " data-action="share/whatsapp/share">
+                <i class="fa fa-whatsapp fa-2x"></i>
+
+            </a>
+            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+        </div>
+        <div class="contact">
+            <p>version 1.1.1.2</p> <br />
+            <a href="https://techassistan.blogspot.com/p/about-us.html?m=1" class="button">creator</a>
+            <a href="https://techassistan.blogspot.com/p/content-us.html?m=1" class="button">contact</a>
+        </div>
+    </div>
+    <script>
+        const mobile_nav = document.querySelector(".mobile-navbar-btn");
+        const nav_header = document.querySelector(".header");
+
+        const toggleNavbar = () => {
+            nav_header.classList.toggle("active");
+        };
+        mobile_nav.addEventListener("click", () => toggleNavbar());
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
