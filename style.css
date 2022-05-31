@@ -28,7 +28,7 @@ body {
     
 }
 main {
-    background-image: url(images/illustrator.jpg);
+    background-image: url('images/illustrator.jpg');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: left -20%;
