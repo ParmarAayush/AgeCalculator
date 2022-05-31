@@ -27,7 +27,13 @@ body {
     font-family: 'Readex Pro', sans-serif;
     
 }
+main {
+    background-image: url(images/illustrator.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: left -20%;
 
+}
 .header {
     background-color: var(--primary);
     padding: 10px;
@@ -92,10 +98,12 @@ body {
 
 .mainBox {
     margin: 100px 20px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .mainBox .heading {
-    padding: 40px;
+    
     float: left;
 }
 
@@ -131,8 +139,9 @@ body {
     padding: 40px;
     margin: 5px;
     text-align: center;
-    border: 2px solid var(--font);
+    /* box-shadow: 0 0 30px rgb(34 34 34 / 25%); */
     width: 300px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
 }
 
 .mainBox .mainContent .main label {
@@ -168,21 +177,22 @@ input[type=text] {
     width: 130px;
     margin: 23px;
     background-color: var(--primary);
-    color: var(--font);
+    color: #FFFFFF;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 2px;
     text-align: center;
     outline: none;
     border: none;
-    transition: all 3s;
+    transition: background-color 3s;
 }
 
 .mainBox .mainContent .main #btn #btn1:hover {
     background-color: transparent;
     border: 2px solid var(--primary);
+    color: var(--font);
 }
 
 .footer {
@@ -221,7 +231,7 @@ input[type=text] {
     background-color: black;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--font);
+    color: #FFFFFF;
     border: none;
     outline: none;
     width: 80px;
@@ -263,6 +273,7 @@ input[type=text] {
         padding: 60px 10px 65px 10px;
         margin: 0px 10px 10px 10px;
         width: 270px;
+        
     }
 
     .mainBox .mainContent .main #output {

@@ -34,28 +34,30 @@
             <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
         </div>
     </div>
-    <div class="mainBox">
-        <div class="heading">
-            <p class="secondary">enter your janmatithi</p>
-            <p class="headline">How much time you <br> are present on earth</p>
-        </div>
-        <div class="mainContent">
-            <div class="main">
+    <main>
+        <div class="mainBox">
+            <div class="heading">
+                <p class="secondary">enter your janmatithi</p>
+                <p class="headline">How much time you <br> are present on earth</p>
+            </div>
+            <div class="mainContent">
+                <div class="main">
 
-                <input type="text" id="day" oninput="cal()" placeholder="DD"> <br />
-                <input type="text" id="month" oninput="cal()" placeholder="MM"><br />
-                <input type="text" id="year" oninput="cal()" placeholder="YYYY"><br />
-                <div id="output">
-                    <span id="year-out"></span> Year
-                    <span id="month-out"></span> Month
-                    <span id="day-0ut"></span> Days
-                </div>
-                <div id="btn">
-                    <input type="button" value="calculat" id="btn1" onclick="cal()">
+                    <input type="text" id="day" placeholder="DD"> <br />
+                    <input type="text" id="month" placeholder="MM"><br />
+                    <input type="text" id="year" placeholder="YYYY"><br />
+                    <div id="output">
+                        <span id="year-out">0</span> Year
+                        <span id="month-out">0</span> Month
+                        <span id="day-0ut">0</span> Days
+                    </div>
+                    <div id="btn">
+                        <input type="button" value="calculat" id="btn1" onclick="cal()">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <div class="footer">
         <div id="share">
             <a href="whatsapp://send?text=calculat your age " data-action="share/whatsapp/share">
